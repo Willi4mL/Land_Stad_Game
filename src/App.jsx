@@ -3,6 +3,7 @@ import './App.css'
 import '../styles/heading.css'
 import '../styles/LandingPage.css'
 import '../styles/session.css'
+import '../styles/category.css'
 
 function App() {
 

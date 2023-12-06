@@ -19,7 +19,7 @@ function LandingPage() {
 				</p>
 			</section>
 			<div className="start-button--position">
-				<NavLink to='session'>
+				<NavLink to='profile'>
 					<button className="start-button">Start</button>
 				</NavLink>
 			</div>

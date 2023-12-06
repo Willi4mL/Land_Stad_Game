@@ -2,9 +2,9 @@
 function Game() {
 
 	return (
-		<>
-			Game
-		</>
+		<main>
+			<p>Game</p>
+		</main>
 	)
 }
 

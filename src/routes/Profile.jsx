@@ -1,12 +1,20 @@
-import { useState, useRef } from "react";
-import Heading from "../../components/Heading"
+import { useState, useRef, useEffect } from "react";
+import Heading from "../../components/Heading.jsx"
 import { CgProfile } from "react-icons/cg";
+import randomSessionID from '../assets/randomSessionID.js'
+import { NavLink } from "react-router-dom";
+import { signal } from "@preact/signals";
 
+export let sessionId = signal('')
 function GetSession() {
 	const [imageSrc, setImageSrc] = useState(null)
 	const [playerName, setPlayerName] = useState('')
 	const fileInputRef = useRef(null)
 	const nameInputRef = useRef(null)
+
+	useEffect(() => {
+		sessionId = (randomSessionID())
+	},[])
 
 	// Opening the file selection dialog
 	const handleButtonClick = () => {
@@ -64,7 +72,12 @@ function GetSession() {
 					</div>
 					{playerName !== '' && nameInputRef.current.value !== '' &&
 						<section className="start-session-container">
-							<button className="session-button">Start session</button>
+							<NavLink to={`/category/${sessionId}`}>
+								<button
+									className="session-button"
+								>Start session
+								</button>
+							</NavLink>
 							<div className="join-session-container">
 								<input
 									className="join-session-input"
