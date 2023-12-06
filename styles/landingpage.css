@@ -1,0 +1,38 @@
+.rules-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1em;
+}
+
+.rules-text:last-child {
+	margin-top: 1em;
+}
+
+.rules-text {
+	max-width: 30em;
+	color: var(--text-color);
+	font-family: var(--read-text);
+	font-size: 1.2em;
+}
+
+.start-button--position {
+	display: flex;
+	justify-content: center;
+	margin-top: 4em;
+}
+
+.start-button {
+	border: none;
+	background-color: #4DC6FF;
+	box-shadow: inset -1px -5px 1px #179bd8;
+	color: var(--text-color);
+	font-family: var(--main-font);
+	padding: 0.5em 1.5em;
+	border-radius: 1em;
+	font-size: 2em;
+}
+
+.start-button:hover {
+	cursor: pointer;
+}

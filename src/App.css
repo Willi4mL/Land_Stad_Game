@@ -1,3 +1,27 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-font: Lilita One;
+  --read-text: Inter;
+  --text-color: #FDFDFD;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(20deg,#100149, #8F4CAE);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link {
+  text-decoration: none;
 }
