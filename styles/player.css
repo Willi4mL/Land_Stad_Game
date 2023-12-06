@@ -1,0 +1,63 @@
+.player-container {
+	display: flex;
+	align-items: center;
+	padding: 3em 1em 1em 1em;
+	width: fit-content;
+}
+
+.player-container:hover {
+	cursor: pointer;
+}
+
+.players {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1.2em;
+}
+
+.player-arrow-icon {
+	margin-left: 0.2em;
+	color: #FDFDFD;
+	align-self: flex-end;
+}
+
+.player-stats-container {
+	display: flex;
+	justify-content: center;
+}
+
+.stats-content-container {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid #FDFDFD;
+	border-radius: 10px;
+	background-color: #4000a966;
+	padding: 1em 0.5em;
+	width: 19em;
+	backdrop-filter: blur(10px);
+}
+
+.stats-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #FDFDFD;
+	margin-bottom: 1em;
+	padding-bottom: 0.2em;
+}
+
+.stats-profile {
+	display: flex;
+	align-items: center;
+}
+
+.stats-name,
+.stats-points {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1.2em;
+}
+
+.stats-name {
+	margin-left: 0.5em;
+}
