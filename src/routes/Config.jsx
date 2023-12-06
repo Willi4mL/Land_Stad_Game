@@ -5,7 +5,6 @@ import Profile from './Profile.jsx'
 import Category from './Category.jsx'
 import Game from './Game.jsx'
 import Score from './Score.jsx'
-import { sessionId } from "./Profile.jsx";
 
 const router = createBrowserRouter([
 	{

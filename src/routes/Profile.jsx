@@ -3,18 +3,18 @@ import Heading from "../../components/Heading.jsx"
 import { CgProfile } from "react-icons/cg";
 import randomSessionID from '../assets/randomSessionID.js'
 import { NavLink } from "react-router-dom";
-import { signal } from "@preact/signals";
 
-export let sessionId = signal('')
 function GetSession() {
 	const [imageSrc, setImageSrc] = useState(null)
 	const [playerName, setPlayerName] = useState('')
+	const [joinId, setJoinId] = useState('')
+	const [newSessionId, setNewSessionId] = useState('')
 	const fileInputRef = useRef(null)
 	const nameInputRef = useRef(null)
 
 	useEffect(() => {
-		sessionId = (randomSessionID())
-	},[])
+		setNewSessionId(randomSessionID())
+	}, [])
 
 	// Opening the file selection dialog
 	const handleButtonClick = () => {
@@ -36,6 +36,17 @@ function GetSession() {
 			// Read image content
 			reader.readAsDataURL(file)
 		}
+	}
+
+	// Start session with random id
+	const handleNewSession = () => {
+		setNewSessionId(randomSessionID())
+	}
+
+	// Join session
+	const joinSessionId = (e) => {
+		const newIdValue = e.target.value
+		setJoinId(newIdValue)
 	}
 
 	return (
@@ -72,17 +83,22 @@ function GetSession() {
 					</div>
 					{playerName !== '' && nameInputRef.current.value !== '' &&
 						<section className="start-session-container">
-							<NavLink to={`/category/${sessionId}`}>
+							<NavLink to={`/category/${newSessionId}`}>
 								<button
 									className="session-button"
+									onClick={handleNewSession}
 								>Start session
 								</button>
 							</NavLink>
 							<div className="join-session-container">
 								<input
 									className="join-session-input"
-									placeholder="Session id" />
-								<button className="session-button join-session-button">Gå med session</button>
+									placeholder="Session id"
+									onChange={joinSessionId}
+								/>
+								<NavLink to={`/category/${joinId}`}>
+									<button className="session-button join-session-button">Gå med session</button>
+								</NavLink>
 							</div>
 						</section>
 					}

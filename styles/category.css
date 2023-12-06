@@ -7,6 +7,12 @@
 	font-size: 1.2em;
 }
 
+.leave-option {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1em;
+}
+
 .session-id {
 	color: var(--text-color);
 	font-family: var(--read-text);
