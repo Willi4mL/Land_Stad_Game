@@ -24,12 +24,12 @@
 
 .start-button {
 	border: none;
-	background-color: #4DC6FF;
-	box-shadow: inset -1px -5px 1px #179bd8;
+	background-color: var(--background-color-button);
+	box-shadow: var(--inner-shadow-button);
 	color: var(--text-color);
 	font-family: var(--main-font);
-	padding: 0.5em 1.5em;
-	border-radius: 1em;
+	padding: var(--padding-button);
+	border-radius: var(--radius-button);
 	font-size: 2em;
 }
 

@@ -5,9 +5,17 @@
 }
 
 :root {
+  /* Text */
   --main-font: Lilita One;
   --read-text: Inter;
   --text-color: #FDFDFD;
+
+  /* Button */
+  --border: none;
+  --background-color-button: #4DC6FF;
+  --inner-shadow-button: inset -1px -5px 1px #179bd8;
+  --padding-button: 0.5em 1.5em;
+  --radius-button: 0.5em;
 }
 
 html, body {
