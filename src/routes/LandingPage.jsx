@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import Heading from "../../components/Heading.jsx"
+import Heading from "../components/Heading.jsx"
 
 function LandingPage() {
 

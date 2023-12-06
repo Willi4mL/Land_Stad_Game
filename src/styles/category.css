@@ -33,7 +33,7 @@
 	position: relative;
 }
 
-.rules-container {
+.rules-container-category {
 	position: absolute;
 	display: flex;
 	flex-direction: column;

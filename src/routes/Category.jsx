@@ -1,10 +1,29 @@
 import { NavLink, useParams } from "react-router-dom"
-import Players from "../../components/Players"
-import { useState } from "react"
+import Players from "../components/Players.jsx"
+import { useState, useEffect, useRef } from "react"
 
 function Category() {
 	const [isRules, setIsRules] = useState(false)
 	const { sessionId } = useParams()
+	const rulesRef = useRef(null);
+
+	// Close the rules if a click occurs outside the element or on the rules button
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (
+				rulesRef.current &&
+				!rulesRef.current.contains(event.target)
+			) {
+				setTimeout(() => {
+					setIsRules(false);
+				}, 0);
+			}
+		}
+		document.addEventListener('click', handleClickOutside, true);
+		return () => {
+			document.removeEventListener('click', handleClickOutside, true);
+		};
+	}, [rulesRef]);
 
 	return (
 		<main>
@@ -21,7 +40,10 @@ function Category() {
 			<p className="session-id">Session ID: {sessionId}</p>
 			{isRules &&
 				<section className="rules-container--position">
-					<div className="rules-container">
+					<div
+						className="rules-container-category"
+						ref={rulesRef}
+					>
 						<p className="rules-heading">Regler</p>
 						<p className="rules-text">
 							Land och stad spelas vanligtis med två eller flera spelare.

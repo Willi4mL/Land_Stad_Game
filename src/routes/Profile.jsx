@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import Heading from "../../components/Heading.jsx"
+import Heading from "../components/Heading.jsx"
 import { CgProfile } from "react-icons/cg";
 import randomSessionID from '../assets/randomSessionID.js'
 import { NavLink } from "react-router-dom";
