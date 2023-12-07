@@ -1,9 +1,16 @@
+import GameHeading from "../components/GameHeading"
+import GamingTable from "../components/GamingTable"
+import Players from "../components/Players"
 
 function Game() {
 
 	return (
 		<main>
-			<p>Game</p>
+			<GameHeading />
+			<Players />
+			<section className="gaming-table-container">
+				<GamingTable />
+			</section>
 		</main>
 	)
 }

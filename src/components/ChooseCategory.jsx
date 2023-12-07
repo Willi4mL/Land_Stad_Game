@@ -1,14 +1,16 @@
+import { NavLink, useParams } from "react-router-dom"
 
 function ChooseCategory() {
+	const { sessionId } = useParams()
 
 	return (
 		<main>
 			<section className="category-section">
 				<div className="category-input-container">
-					<input 
-					type="text" 
-					placeholder="Kategori"
-					className="category-input"
+					<input
+						type="text"
+						placeholder="Kategori"
+						className="category-input"
 					/>
 					<button className="confirm-category-button">OK</button>
 				</div>
@@ -20,7 +22,9 @@ function ChooseCategory() {
 					<p className="category">Mat</p>
 					<p className="category">Artist</p>
 				</div>
-				<button className="start-game-button">Börja spela</button>
+				<NavLink to={`/game/${sessionId}`}>
+					<button className="start-game-button">Börja spela</button>
+				</NavLink>
 			</section>
 		</main>
 	)

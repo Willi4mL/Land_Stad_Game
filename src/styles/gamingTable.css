@@ -1,0 +1,41 @@
+.gaming-table-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.player-game-container {
+	display: flex;
+	border-bottom: 1px solid #fdfdfd;
+	width: 17em;
+	margin-bottom: 1.5em;
+	padding: 0 0.2em;
+}
+
+.game-category, 
+.game-letter {
+	color: var(--text-color);
+	font-family: var(--main-font);
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+.game-letter {
+	margin: 0 0.5em 0 0.2em;
+}
+
+.game-players-word {
+	background-color: transparent;
+	border: none;
+	color: var(--text-color);
+	font-family: var(--main-font);
+	font-size: 1.5em;
+	font-weight: 400;
+	outline: none;
+	width: 100%;
+}
+
+.game-players-word::placeholder {
+	color:#b9b9b96c;
+	font-family: var(--read-text);
+}
