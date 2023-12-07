@@ -1,8 +1,27 @@
+import { signal } from "@preact/signals"
+import { useState } from "react"
 import { NavLink, useParams } from "react-router-dom"
 
+let allCategories = signal([])
 function ChooseCategory() {
+	const [categories, setCategories] = useState('')
 	const { sessionId } = useParams()
 
+	const inputCategory = (e) => {
+		setCategories(e.target.value)
+	}
+
+	const confirmCategory = () => {
+		allCategories.value = [...allCategories.value, categories]
+		setCategories('')
+	}
+
+	const enterKeyConfirm = (e) => {
+		if(e.key === 'Enter') {
+			confirmCategory()
+		}
+	}
+ 
 	return (
 		<main>
 			<section className="category-section">
@@ -11,16 +30,21 @@ function ChooseCategory() {
 						type="text"
 						placeholder="Kategori"
 						className="category-input"
+						onChange={inputCategory}
+						onKeyDown={enterKeyConfirm}
+						value={categories}
 					/>
-					<button className="confirm-category-button">OK</button>
+					<button 
+					className="confirm-category-button"
+					onClick={confirmCategory}
+					>OK
+					</button>
 				</div>
 				<p className="choosen-categories-heading">Valda kategorier</p>
 				<div className="categories-container">
-					<p className="category">Spel</p>
-					<p className="category">Djur</p>
-					<p className="category">Dryck</p>
-					<p className="category">Mat</p>
-					<p className="category">Artist</p>
+					{allCategories.value.map((item, index) => (
+						<p key={index} className="category">{item}</p>
+					))}
 				</div>
 				<NavLink to={`/game/${sessionId}`}>
 					<button className="start-game-button">Börja spela</button>
