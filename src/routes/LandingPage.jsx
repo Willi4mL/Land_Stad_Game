@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom"
 import Heading from "../components/Heading.jsx"
+import { useRecoilState } from "recoil";
+import { isPlayerName } from "../states/player.js";
 
 function LandingPage() {
+	const [playerName, setPlayerName] = useRecoilState(isPlayerName)
+
 
 	return (
 		<main>
@@ -19,8 +23,12 @@ function LandingPage() {
 				</p>
 			</section>
 			<div className="start-button--position">
-				<NavLink to='profile'>
-					<button className="start-button">Start</button>
+				<NavLink to='pregame'>
+					<button 
+					className="start-button"
+					onClick={() => setPlayerName('')}
+					>Start
+					</button>
 				</NavLink>
 			</div>
 		</main>

@@ -39,10 +39,10 @@
 	flex-direction: column;
 	border: 3px solid #FDFDFD;
 	border-radius: 10px;
-	background-color: #4000a966;
+	background-color: #3617679c;
 	padding: 1em 0.5em;
 	width: 19em;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(20px);
 	z-index: 2;
 	left: 0;
 	right: 0;

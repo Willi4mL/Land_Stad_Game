@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import LandingPage from './LandingPage.jsx'
-import Profile from './Profile.jsx'
+import Pregame from './Pregame.jsx'
 import Category from './Category.jsx'
 import Game from './Game.jsx'
 import Score from './Score.jsx'
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
 				element: <LandingPage />
 			},
 			{
-				path: 'profile',
-				element: <Profile />
+				path: 'pregame',
+				element: <Pregame />
 			},
 			{
 				path: 'category/:sessionId',
