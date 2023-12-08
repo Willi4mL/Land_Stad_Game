@@ -39,3 +39,12 @@
 	color:#b9b9b96c;
 	font-family: var(--read-text);
 }
+
+.countdown {
+	color: var(--text-color);
+	font-family: var(--main-font);
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-left: 1rem;
+}
+

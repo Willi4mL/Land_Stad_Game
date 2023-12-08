@@ -1,0 +1,55 @@
+.result-heading {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 2em;
+	margin-bottom: 1em;
+	margin-top: 3rem;
+}
+
+.result-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.result-content {
+	width: 80%;
+	max-width: 20em;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #FDFDFD;
+	margin-bottom: 1em;
+	padding: 0em 1em 0.2em 0em;
+}
+
+.result-profile {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-right: 1em;
+}
+
+.result-profile-container {
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	border: 3px solid #FDFDFD;
+}
+
+.result-name-points {
+	display: flex;
+	justify-content: space-between;
+}
+
+.result-name {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1.2em;
+	margin-left: 0.5em;
+}
+
+.category-points {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1.2em;
+}

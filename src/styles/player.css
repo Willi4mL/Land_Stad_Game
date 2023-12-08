@@ -1,8 +1,8 @@
 .player-container {
 	display: flex;
 	align-items: center;
-	padding: 3em 1em 1em 1em;
 	width: fit-content;
+	margin: 3em 1em 1em 1em;
 }
 
 .player-container:hover {
@@ -13,12 +13,6 @@
 	font-family: var(--main-font);
 	color: var(--text-color);
 	font-size: 1.2em;
-}
-
-.player-arrow-icon {
-	margin-left: 0.2em;
-	color: #FDFDFD;
-	align-self: flex-end;
 }
 
 .player-stats-container {
@@ -54,13 +48,9 @@
 	align-items: center;
 }
 
-.stats-name,
-.stats-points {
+.stats-name {
 	font-family: var(--main-font);
 	color: var(--text-color);
 	font-size: 1.2em;
-}
-
-.stats-name {
 	margin-left: 0.5em;
 }

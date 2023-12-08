@@ -33,3 +33,9 @@ body {
 .nav-link {
   text-decoration: none;
 }
+
+.player-arrow-icon {
+	margin-left: 0.2em;
+	color: #FDFDFD;
+	align-self: flex-end;
+}

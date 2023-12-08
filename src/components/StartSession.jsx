@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import randomSessionID from '../assets/randomSessionID.js'
+import randomSessionID from '../utils/randomSessionID.js'
 import { NavLink } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { isPlayerName } from "../states/player.js";

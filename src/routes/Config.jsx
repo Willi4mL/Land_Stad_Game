@@ -27,9 +27,10 @@ const router = createBrowserRouter([
 			{
 				path: 'game/:sessionId',
 				element: <Game />
-			},
+				
+			  },
 			{
-				path: 'score',
+				path: 'score/:sessionId',
 				element: <Score />
 			},
 			{

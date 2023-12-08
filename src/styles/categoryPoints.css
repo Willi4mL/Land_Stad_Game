@@ -1,0 +1,16 @@
+.category-points-heading {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin: 3em 1em 1em 1em;
+}
+
+.category-points-heading:hover {
+	cursor: pointer;
+}
+
+.category-points-link {
+	font-family: var(--main-font);
+	color: var(--text-color);
+	font-size: 1.2em;
+}
