@@ -45,9 +45,8 @@ function Players() {
 								<div className="profile-container">
 									<CgProfile className="standard-profile" />
 								</div>
-								<p className="stats-name">test</p>
+								<p className="stats-name">Kalle Johansson</p>
 							</div>
-							<p className="stats-points">5p</p>
 						</div>
 
 						<div className="stats-content">
@@ -55,9 +54,8 @@ function Players() {
 								<div className="profile-container">
 									<CgProfile className="standard-profile" />
 								</div>
-								<p className="stats-name">test</p>
+								<p className="stats-name">Frida Karlsson</p>
 							</div>
-							<p className="stats-points">5p</p>
 						</div>
 					</div>
 				</section>

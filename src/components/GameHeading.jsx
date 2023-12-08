@@ -1,5 +1,6 @@
 import { NavLink, useParams } from "react-router-dom"
 import { useState, useEffect, useRef } from "react"
+import { allCategories } from "./ChooseCategory"
 
 function GameHeading() {
 	const [isRules, setIsRules] = useState(false)
@@ -33,7 +34,11 @@ function GameHeading() {
 				>Regler
 				</button>
 				<NavLink to='/' className="nav-link">
-					<p className="leave-option">Lämna</p>
+					<p 
+					className="leave-option"
+					onClick={() => allCategories.value = []}
+					>Lämna
+					</p>
 				</NavLink>
 			</div>
 			<p className="session-id">Session ID: {sessionId}</p>

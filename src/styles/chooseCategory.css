@@ -56,8 +56,27 @@
 	max-width: 17em;
 }
 
-.category {
+.category--position {
+	display: flex;
+	align-items: center;
 	margin: 0 1em;
+}
+
+.category {
+	display: flex;
+	align-self: center;
+}
+
+.delete-category {
+	display: flex;
+	align-self: center;
+	font-size: 0.7em;
+	margin-left: 0.3em;
+	color: #eb3737;
+}
+
+.delete-category:hover {
+	cursor: pointer;
 }
 
 .start-game-button {
