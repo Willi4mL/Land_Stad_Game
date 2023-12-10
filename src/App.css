@@ -18,16 +18,14 @@
   --radius-button: 0.5em;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  background: linear-gradient(20deg,#100149, #8F4CAE);
+.main-content {
+  background: linear-gradient(20deg, #100149, #8F4CAE);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .nav-link {
@@ -35,7 +33,7 @@ body {
 }
 
 .player-arrow-icon {
-	margin-left: 0.2em;
-	color: #FDFDFD;
-	align-self: flex-end;
+  margin-left: 0.2em;
+  color: #FDFDFD;
+  align-self: flex-end;
 }

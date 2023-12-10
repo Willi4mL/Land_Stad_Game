@@ -14,3 +14,54 @@
 	color: var(--text-color);
 	font-size: 1.2em;
 }
+
+/* Player modal */
+.result-modal-container {
+	position: relative;
+}
+
+.result-content-modal-container {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	border: 3px solid #fdfdfd;
+	border-radius: 10px;
+	background-color: #361767;
+	padding: 1em 0.5em;
+	width: 19em;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.result-content-modal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #FDFDFD;
+	margin-bottom: 1em;
+	padding-bottom: 0.2em;
+}
+
+.result-profile-image-modal {
+	background-color: var(--text-color);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	color: #2e2e2e;
+}
+
+.result-container-modal {
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	border: 3px solid #FDFDFD;
+}
+
+.result-name-modal {
+	font-family: var(--read-text);
+	color: var(--text-color);
+	font-size: 1em;
+	margin-left: 0.5em;
+}

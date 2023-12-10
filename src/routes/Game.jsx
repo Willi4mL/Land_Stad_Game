@@ -11,7 +11,7 @@ function Game() {
 	})
 	const { sessionId } = useParams()
 
-	const playTimePerMin = 0.5
+	const playTimePerMin = 0.1
 
 	useEffect(() => {
 		let fullTime = 1000 * 60 * playTimePerMin
@@ -37,7 +37,13 @@ function Game() {
 		<main>
 			<GameHeading />
 			<Players />
-			<p className="countdown">Tid: {timeLeft.minutes}:{timeLeft.seconds}</p>
+			<p 
+			className="countdown">Tid: 
+			<span 
+			className={timeLeft.minutes < 1 ? "countdown-last-min" : "countdown"}>
+				{timeLeft.minutes}:{timeLeft.seconds}
+				</span>
+				</p>
 			<section className="gaming-table-container">
 				<GamingTable />
 			</section>

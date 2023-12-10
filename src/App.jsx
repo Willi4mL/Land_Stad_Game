@@ -13,9 +13,9 @@ import './styles/categoryPoints.css'
 function App() {
 
   return (
-    <>
+    <main className='main-content'>
       <Outlet />
-    </>
+    </main>
   )
 }
 

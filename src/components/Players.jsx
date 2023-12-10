@@ -15,14 +15,14 @@ function Players() {
 			) {
 				setTimeout(() => {
 					setIsStats(false);
-				}, 0);
+				}, 0)
 			}
 		}
-		document.addEventListener('click', handleClickOutside, true);
+		document.addEventListener('click', handleClickOutside, true)
 		return () => {
-			document.removeEventListener('click', handleClickOutside, true);
-		};
-	}, [playerStatsRef]);
+			document.removeEventListener('click', handleClickOutside, true)
+		}
+	}, [playerStatsRef])
 
 	return (
 		<main>
@@ -40,21 +40,21 @@ function Players() {
 					className="stats-content-container"
 					ref={playerStatsRef}
 					>
-						<div className="stats-content">
-							<div className="stats-profile">
+						<div className="player-content-modal">
+							<div className="player-profile">
 								<div className="profile-container">
-									<CgProfile className="standard-profile" />
+									<CgProfile className="player-standard-profile" />
 								</div>
-								<p className="stats-name">Kalle Johansson</p>
+								<p className="player-name">Kalle Johansson</p>
 							</div>
 						</div>
 
-						<div className="stats-content">
-							<div className="stats-profile">
+						<div className="player-content-modal">
+							<div className="player-profile">
 								<div className="profile-container">
-									<CgProfile className="standard-profile" />
+									<CgProfile className="player-standard-profile" />
 								</div>
-								<p className="stats-name">Frida Karlsson</p>
+								<p className="player-name">Frida Bengtsson</p>
 							</div>
 						</div>
 					</div>

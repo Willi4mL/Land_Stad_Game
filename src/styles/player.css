@@ -34,7 +34,7 @@
 	margin: auto;
 }
 
-.stats-content {
+.player-content-modal {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -43,12 +43,30 @@
 	padding-bottom: 0.2em;
 }
 
-.stats-profile {
+.player-profile {
 	display: flex;
 	align-items: center;
 }
 
-.stats-name {
+.player-standard-profile {
+	background-color: var(--text-color);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	color: #2e2e2e;
+}
+
+.result-profile-modal {
+	background-color: var(--text-color);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	color: #2e2e2e;
+}
+
+.player-name {
 	font-family: var(--main-font);
 	color: var(--text-color);
 	font-size: 1.2em;
